@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import Cookie from "./Cookie";
 import Count from "./Count";
+import Restart from "./Restart";
 
 function App() {
   const [count, setCount] = useState(
@@ -16,13 +17,7 @@ function App() {
     <div className="container">
       <Cookie count={count} setCount={setCount} />
       <Count count={count} />
-      <button
-        onClick={() => {
-          setCount(0);
-        }}
-      >
-        &#8634;
-      </button>
+      <Restart setCount={setCount} />
     </div>
   );
 }
