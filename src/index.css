@@ -30,7 +30,9 @@ code {
 img {
   width: 260px;
 }
-
+img:active {
+  width: 255px;
+}
 .count {
   font-family: Helvetica;
   font-size: 3rem;
