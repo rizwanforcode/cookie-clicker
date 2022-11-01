@@ -16,6 +16,13 @@ function App() {
     <div className="container">
       <Cookie count={count} setCount={setCount} />
       <Count count={count} />
+      <button
+        onClick={() => {
+          setCount(0);
+        }}
+      >
+        &#8634;
+      </button>
     </div>
   );
 }
