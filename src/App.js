@@ -1,18 +1,14 @@
 import { useState } from "react";
-import cookiePic from "./cookiePic.png";
+
+import Cookie from "./Cookie";
+import Count from "./Count";
 
 function App() {
   const [count, setCount] = useState(0);
   return (
     <div className="container">
-      <img
-        src={cookiePic}
-        alt="cookie"
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      />
-      <p className="count">{count}</p>
+      <Cookie count={count} setCount={setCount} />
+      <Count count={count} />
     </div>
   );
 }
